@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <title>Biblioteca Animation.css</title>
+        <meta charset="UTF-8">
+        <link rel='stylesheet' href='css/animations.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <style>
+        #pqbola{
+            background-image: url("img/pqbola.png");
+            width: 100px;
+            height:100px;
+
+        }
+
+    </style>
+    <body>
+    <center> 
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="pqbola" class='slideLeft'></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </center>
+
+
+</body> <script>
+    $(window).scroll(function () {
+        $('#pqbola').each(function () {
+            var imagePos = $(this).offset().top;
+
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 400) {
+                $(this).addClass(".slideLeft");
+            }
+        });
+    });
+</script> <script>
+        $('#animatedElement').click(function () {
+            $(this).addClass("slideUp");
+        });
+</script>
+</html>
