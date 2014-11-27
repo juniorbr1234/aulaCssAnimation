@@ -6,5 +6,5 @@ desenho e animação
 Aula de CSS animation 
 
 Alunos: Junior Westarb
-       Felipe Locatelli
+        Felipe Locatelli
 
